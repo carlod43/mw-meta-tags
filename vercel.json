@@ -11,10 +11,5 @@
         "src": "/(.*)",
         "dest": "/app.js"
       }
-    ],
-    "env": {
-      "TMDB_API_KEY": "",
-      "MW_BASE_URL": ""
-    }
-}
-  
+    ]
+}  
