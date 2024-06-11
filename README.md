@@ -17,12 +17,12 @@ This requires you to host your movie web or sudo flix instance on Cloudflare or 
 
 -  Name your rule something like "If Preview Crawler"
 
-- In the box below "Expression Preview", to the right click "Edit Expression"
+- In the box below "Expression Preview", to the right of that box, click "Edit Expression"
 
 - Paste the following into the box:
 
 ```
-(http.user_agent contains "facebookinternalhit") or (http.user_agent contains "facebookinternalhit/") or (http.user_agent eq "facebookexternalhit/1.1 (+http://www.facebook.com/externalhit_uatext.php)") or (http.user_agent contains "TwitterBot") or (http.user_agent contains "Twitterbot") or (http.user_agent eq "Mozilla/5.0 (compatible; Discordbot/2.0; +https://discordapp.com)") or (http.user_agent contains "Discordbot/2.0") or (http.user_agent contains "Discordbot")
+(http.user_agent contains "facebookinternalhit") or (http.user_agent contains "facebookinternalhit/") or (http.user_agent eq "facebookexternalhit/1.1 (+http://www.facebook.com/externalhit_uatext.php)") or (http.user_agent contains "TwitterBot") or (http.user_agent contains "Twitterbot") or (http.user_agent eq "Mozilla/5.0 (compatible; Discordbot/2.0; +https://discordapp.com)") or (http.user_agent contains "Discordbot/2.0") or (http.user_agent contains "Discordbot") or (http.user_agent eq "facebookexternalhit/1.1") or (http.user_agent eq "facebookcatalog/1.0") or (http.user_agent eq "Facebot/1.0") or (http.user_agent eq "SkypeUriPreview") or (http.user_agent contains "LinkedInBot/1.0") or (http.user_agent contains "facebookexternalhit/1.0") or (http.user_agent contains "Slackbot") or (http.user_agent contains "redditbot") or (http.user_agent contains "WhatsApp") or (http.user_agent contains " BingPreview") or (http.user_agent contains "Mastodon") or (http.user_agent contains "bitlybot") or (http.user_agent contains "AddThis.com")
 ```
 
 - Under "Then" select "Set Static" 
