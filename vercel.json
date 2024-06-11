@@ -7,13 +7,7 @@
       }
     ],
     "env": {
-      "TMDB_ID": {
-        "type": "plain",
-        "value": ""
-      },
-      "MW_BASE_URL": {
-        "type": "plain",
-        "value": ""
-      }
+        "TMDB_API_KEY": "@tmdb_api_key",
+        "MW_BASE_URL": "@mw_base_url"
     }
 }
