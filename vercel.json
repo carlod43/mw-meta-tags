@@ -1,0 +1,19 @@
+{
+    "version": 2,
+    "builds": [
+      {
+        "src": "index.js",
+        "use": "@vercel/node"
+      }
+    ],
+    "env": {
+      "TMDB_ID": {
+        "type": "plain",
+        "value": ""
+      },
+      "MW_BASE_URL": {
+        "type": "plain",
+        "value": ""
+      }
+    }
+}

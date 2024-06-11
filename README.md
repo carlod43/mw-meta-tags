@@ -29,7 +29,9 @@ This requires you to host your movie web or sudo flix instance on Cloudflare or 
 
 - Set Header Name to `"X-Rewrite"` and Value to `"true"`
 
-- Then go to your `vercel.json` file of your movie-web/sudo-flix source code
+### Assuming you're using vercel to host your sudo-flix/MW instance (if not, than use .htaccess or another way to redo re-writes)
+
+- Then go to your `vercel.json` file of your main movie-web/sudo-flix source code (not this one)
 
 - Redo your `rewrites` to look like the following:
 
@@ -59,11 +61,12 @@ This requires you to host your movie web or sudo flix instance on Cloudflare or 
 
 Replace https://yourmetatagappdomain.com with whatever URL you're hosting this code on. 
 
-- Go to your `.env.example` file for your Meta Tag grabber source
-- Rename it to `.env`
 - Set your `TMDB_API_KEY` and `MW_BASE_URL` (MW_BASE URL = your main movie-web/sudo-flix website without trailing slash)
 - Deploy your code. 
 
+## Deploy
+
+[![Deploy to Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/joshholly/mw-meta-tags)
 
 ## Author
 

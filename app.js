@@ -1,15 +1,11 @@
 const express = require('express');
 const axios = require('axios');
 const useragent = require('useragent');
-//pull from .env file. Remove this line below if you want to hardcode the values
-require('dotenv').config();
+const { TMDB_API_KEY, MW_BASE_URL } = process.env;
 
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
-// Replace with your TMDB API key and main movie-web or sudo-flix site (without trailing slash)
-const TMDB_API_KEY = process.env.TMDB_API_KEY;
-const MW_BASE_URL = process.env.MW_BASE_URL;
 
 // Redirect root to base URL
 app.get('/', (req, res) => {
