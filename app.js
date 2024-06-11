@@ -4,10 +4,6 @@ const useragent = require('useragent');
 
 const { TMDB_API_KEY, MW_BASE_URL } = process.env;
 
-// Debug logging
-console.log('TMDB_API_KEY:', TMDB_API_KEY);
-console.log('MW_BASE_URL:', MW_BASE_URL);
-
 const app = express();
 const PORT = process.env.PORT || 3000;
 
