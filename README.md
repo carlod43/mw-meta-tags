@@ -66,7 +66,10 @@ Replace https://yourmetatagappdomain.com with whatever URL you're hosting this c
 
 ## Deploy
 
-[![Deploy to Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/joshholly/mw-meta-tags)
+Click the button below to deploy to vercel. 
+
+[![Deploy to Vercel](https://vercel.com/button)](https://vercel.com/new/joshhollys-projects/clone?repository-url=https%3A%2F%2Fgithub.com%2Fjoshholly%2Fmw-meta-tags&env=TMDB_API_KEY&env=MW_BASE_URL)
+
 
 ## Author
 
