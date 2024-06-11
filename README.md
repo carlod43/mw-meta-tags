@@ -22,7 +22,7 @@ This requires you to host your movie web or sudo flix instance on Cloudflare or 
 - Paste the following into the box:
 
 ```
-(http.user_agent contains "facebookinternalhit") or (http.user_agent contains "facebookinternalhit/") or (http.user_agent eq "facebookexternalhit/1.1 (+http://www.facebook.com/externalhit_uatext.php)") or (http.user_agent eq "https://postman-echo.com/get") or (http.user_agent contains "TwitterBot") or (http.user_agent contains "Twitterbot") or (http.user_agent eq "Mozilla/5.0 (compatible; Discordbot/2.0; +https://discordapp.com)") or (http.user_agent contains "Discordbot/2.0") or (http.user_agent contains "Discordbot")
+(http.user_agent contains "facebookinternalhit") or (http.user_agent contains "facebookinternalhit/") or (http.user_agent eq "facebookexternalhit/1.1 (+http://www.facebook.com/externalhit_uatext.php)") or (http.user_agent contains "TwitterBot") or (http.user_agent contains "Twitterbot") or (http.user_agent eq "Mozilla/5.0 (compatible; Discordbot/2.0; +https://discordapp.com)") or (http.user_agent contains "Discordbot/2.0") or (http.user_agent contains "Discordbot")
 ```
 
 - Under "Then" select "Set Static" 
